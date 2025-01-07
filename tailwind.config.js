@@ -8,16 +8,13 @@ module.exports = {
     extend: {
       
       fontFamily: {
-        poppins: ["Poppins", 'serif'],
+        inter: ["Inter", 'serif'],
       },
 
       colors: {
         "design-background": {
           black: "#111729",
-          toggle: "#223344",
-          blue: "#2A4DD0",
-          white: "#F2F9FE",
-
+          gray: "#D2D5DA",
         
         },
       },

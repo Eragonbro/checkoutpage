@@ -10,17 +10,174 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  </head>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">    
+    </head>
 
-  <body class="flex justify-center dark:text-gray-200 font-poppins dark:bg-design-background-black min-w-[360px] ">
+  <body class=" bg-gray-200  relative font-inter ">
+     <!-- Header-->
+     <header class="flex absolute justify-center">
+        <img class="sm:hidden object-fit   w-screen min-h-48 " src="/resources/background-image.png" alt="apple background">
+        <img class="hidden sm:block w-screen  object-cover sm:h-48  " src="/resources/background-image@2x.png" alt="apple background">
+        <div class="absolute  flex space-x-6 z-10 text-gray-300 top-7 items-center">
+            <h3 class="font-bold text-xl">Checkout</h3>
+            <p class="bg-black px-3 py-1  rounded-3xl text-sm font-medium">3 items</p>
+        </div>      
+    </header>
     
     <!-- body container
         min-w-[370px]
     -->
-    <div class="relative w-full max-w-sm mx-2 sm:max-w-7xl sm:mx-8">
-        
-    </div>
 
+    <main class="relative top-20 z-10 sm:flex  sm:w-[95vw] sm:h-[85vh]   justify-center sm:mx-auto  mx-4  min-w-[320px] ">
+        <!-- Cart floating z-50 -->
+        <div class="bg-design-background-gray rounded-t-2xl px-6  py-6 sm:rounded-l-2xl sm:rounded-r-none flex-1">
+            
+            <!--items--> 
+            <div class="flex flex-col  gap-9 " >
+
+                <!--items #1-->
+                <div class="grid grid-cols-[auto_1fr_1fr] gap-x-8 ">
+                    <div class="bg-white col-span-1 row-start-1 row-end-4 h-full flex justify-center rounded-lg py-4 w-24 h-24">
+                        <img class="self-center" src="/resources/Gold.png" alt="iphone gold">
+                    </div>
+                    
+                    <div class="col-span-1 row-span-2 space-y-0 my-0 ">
+                        <!-- item name-->
+                        <p class="font-bold leading-0">iPhone 12 Pro <br> <span class="font-normal"> Golden</span></p>
+                        
+                    </div>
+
+                        <!--Price-->
+                        <p class="col-span-1 font-bold justify-self-end">$999.00</p>
+                    
+                    <!--quantity-->
+                    <p class="col-span-1 col-start-2">x 1</p>
+
+                    <!--Remove-->
+                    <p class="col-span-1 col-start-3 justify-self-end self-end">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+                        </svg>
+                    </p>
+                </div>
+                
+                <!--item #2-->
+                <div class="grid grid-cols-[auto_1fr_1fr] gap-x-8">
+                    <div class="bg-white row-start-1 row-end-4 h-full flex justify-center rounded-lg py-4 w-24 h-24">
+                        <img class="self-center" src="/resources/Apple-watch.png" alt="iphone gold">
+                    </div>
+                    
+                    <div class="col-span-1 row-span-2 space-y-0 my-0 ">
+                        <!-- item name-->
+                        <p class="font-bold leading-0">Apple Watch<br> <span class="font-normal">Blue</span></p>
+                        
+                    </div>
+
+                        <!--Price-->
+                        <p class="col-span-1 font-bold justify-self-end">$399.00</p>
+                    
+                    <!--quantity-->
+                    <p class="col-span-1 col-start-2">x 1</p>
+
+                    <!--Remove-->
+                    <p class="col-span-1 col-start-3 justify-self-end self-end">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+                        </svg>
+                    </p>
+                </div>
+                
+                <!--item #3-->
+                <div class="grid grid-cols-3  gap-x-8  grid-cols-[auto_1fr_1fr] ">
+                    <div class="bg-white col-span-1 row-start-1 row-end-4 h-full flex justify-center rounded-lg py-4 w-24 h-24">
+                        <img class="self-center" src="/resources/iMac.png" alt="iphone gold">
+                    </div>
+                    
+                    <div class="col-span-1 row-span-2 space-y-0 my-0 ">
+                        <!-- item name-->
+                        <p class="font-bold leading-0">iMac <br> <span class="font-normal"> Green</span></p>
+                        
+                    </div>
+
+                        <!--Price-->
+                        <p class="col-span-1 font-bold justify-self-end">$1999.00</p>
+                    
+                    <!--quantity-->
+                    <p class="col-span-1 col-start-2">x 1</p>
+
+                    <!--Remove-->
+                    <p class="col-span-1 col-start-3 justify-self-end self-end">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+                        </svg>
+                    </p>
+                </div>
+                
+                
+
+            </div>
+
+            <!--checkplease-->
+
+            <!--coupon-->
+            <div class="mt-6 flex justify-between max-w-full gap-2  border-t-2  border-gray-400  pt-6 ">
+                <label class="hidden" for=""></label>
+                <input class="h-10 rounded-lg px-3  w-full  inline-block max-w-2/3 sm:h-12 " id="" type="text" placeholder="Enter coupon code">
+                <button class="bg-gray-900 text-gray-200 px-2 py-2 rounded-lg h-10 flex-shrink-1 min-w-fit  sm:h-12 " type="submit" onclick="submitCoupon()">Apply Coupon</button>
+            </div>
+
+            <!--numbers-->
+            <div class="space-y-4 text-base">
+                <div class="mt-6 flex w-full justify-between font-semibold">
+                    <p>Sub total</p>
+                    <p>$2597.00</p>
+                </div>
+                
+                <div class="mt-1  flex w-full justify-between font-semibold">
+                    <p>Tax</p>
+                    <p>$623.28</p>
+                </div>
+                
+                <div class="mt-1 flex w-full justify-between font-semibold">
+                    <p>Total</p>
+                    <p>$3220.28</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact info-->
+        <div class=" py-4 px-6 rounded-b-2xl  bg-white sm:rounded-r-2xl sm:rounded-l-none flex-1 ">
+            <p class="font-semibold text-xl">Contact Information</p>
+            <form class="" action="" >
+                <div class="mt-6">
+                    <label for="name">First and Last name</label>
+                    <input class="block bg-slate-300 w-full text-gray-200 py-2 px-3 rounded-lg h-10 sm:h-12 "  id="name" type="text" placeholder="Enter first and last name">
+                </div>
+                
+                <div class="mt-6">
+                    <label for="email">Email address</label>
+                    <input class="block  bg-slate-300 w-full text-gray-200 py-2 px-3 rounded-lg h-10 sm:h-12 "  id="email" type="email" placeholder="Enter email address">
+                </div>  
+
+               
+                <div class="flex gap-5 w-full flex-wrap mt-6">                 
+                    <div>
+                        <label for="country">Country</label>
+                        <select class="block text-md  bg-slate-300 py-2 px-3 rounded-lg text-gray-600 h-10 sm:h-12 "  name="country" id="country">
+                            <option class="text-md" value="USA">United States</option>
+                            <option value="Canada">Canada</option>
+                        </select>
+                    </div>
+
+                    <div class="w-full flex-1">
+                    <label for="postalCode">Postal code</label>
+                    <input class="block bg-slate-300 px-3 py-4 rounded-lg h-10 w-full sm:h-12 "   id="postalCode" type="number" placeholder="95018">
+                    </div>
+                    </div>
+
+                <button class="block max-w-full  bg-design-background-black text-gray-200 py-2 px-3 rounded-lg w-full h-12 sm:mt-9  sm:h-12 mt-6 " type="submit">Continue</button>
+            </form>
+        </div>
+    </main>
   </body>
 </html>
